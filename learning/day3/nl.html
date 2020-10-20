@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /** 单分支
+    var age = 17;
+    if(age >= 18){
+        alert("已成年");
+    }
+    else{
+        alert("未成年");
+    }
+    */
+    /** 多分支
+    var r = prompt("请输入成绩")
+    r = parseInt(r) && Number(r);
+    if (r>100)
+    alert("输入错误")
+    else if(r<0)
+    alert("输入错误")
+    else if(r>=90)
+    alert("成绩优秀")
+    else if(r>=80)
+    alert("成绩良好")
+    else if(r>=70)
+    alert("成绩中等")
+    else if(r>=60)
+    alert("成绩及格")
+    else 
+    alert ("不及格")
+    */
+    /** 循环体 一定要设置循环出口
+    var num = 1
+    while(num <=100){
+        console.log(num);
+        num ++;
+
+    }
+    alert(num);
+    */
+    /** do while 先执行一次，再判断是否满足 
+    var num = 5;
+    do{
+        console.log(num);
+        num--;
+    }while(num >3);
+    console.log(num);
+    alert (num);
+    */
+    /** for 循环
+    //i++是循环体 
+    for(var i=0; i<10; i++){
+        console.log(i);       
+        alert(i);
+    }
+    */
+    /** 金字塔
+    var r = prompt("请输入需要打印金字塔的层数")
+    r = parseFloat(r) && Number(r);
+    if (isNaN(r)){
+        alert("请输入纯数字");
+    }
+    for(var i = 1; i<=r;i++){
+        var a = r - i;
+        for(var k = 0;k < a; ++k){
+            document.write('&nbsp;');
+        }
+        var star = i*2 -1;
+        for(var j = 0; j < star; ++j){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+    */
+    /**
+    function IsThatNumber(x)
+{
+return x%3==0 && x%5==0 && x%7==0;
+}
+
+var i,n=0;
+for(i=1;i<100;n++)
+{
+if (IsThatNumber(i))
+{
+
+document.write(i);
+document.write(",");
+n++;
+if (n%6 == 0) document.write("<br />");
+}
+}
+document.write("<br />");
+document.write("共有"+n+"个数");
+*/
+/**
+var a = 0;
+for( var i=1;i<1000;i++){
+    if( i%3==0 && i%5==0 && i%7==0){
+        document.write(i+' ');
+        a++;
+        if(a == 6){
+            document.write('<br>')
+        }
+    }
+}
+*/
+/**
+var a = prompt("请输入月收入")
+    a = parseInt(a) ;
+    if (a <= 1200){
+        alert("你个穷比")
+    }
+    else{
+    var r,i,b; 
+    r = (a-1200) 
+    if (r > 100000){
+        i = (r * 0.45 - 15375);
+    }
+    else if(r>80000){
+        i = (r * 0.40 - 10375);
+    }
+    else if(r>60000){
+        i = (r * 0.35 - 6375);
+    }
+    else if(r>40000){
+        i = (r * 0.30 - 3375);
+    }
+    else if(r>20000){
+        i = (r * 0.25 - 1375);
+    }
+    else if(r>5000){
+        i = (r * 0.20 - 375);
+    }
+    else if(r>2000){
+        i = (r * 0.15 - 125);
+    }
+    else if(r>500){
+        i = (r * 0.10 - 25);
+    }
+    else if(r>0){
+        i = (r * 0.05);
+    }
+    alert("您需要缴纳"+i+"元")
+    }
+    */
+
+</script>
+</html>

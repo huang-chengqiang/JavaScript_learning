@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=200, initial-scale=1.5">
+    <title>简易计算器</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="oneNum" id="oneNum" placeholder="第一个数字" />
+        <select id="cars">
+            <option value="0">+</option>
+            <option value="1">-</option>
+            <option value="2">*</option>
+            <option value="3">/</option>
+        </select>
+        <input type="text" name="twoNum" id="twoNum" value="" placeholder="第二个数字" />
+        <button id="math" onclick="myFunction()">=</button>
+        <input type="text" name="result" id="result" />
+    </div>
+</body>
+<script >
+	function myFunction() {
+		var cars = document.getElementById("cars");
+		var a = Number(document.getElementById("oneNum").value);
+		var b = Number(document.getElementById("twoNum").value);
+		var c = document.getElementById("result");
+		if(a == 0 && b == 0) {
+			alert("数字为空！");
+		} 
+        else {
+			switch(parseInt(cars.value)) {
+				case 0:
+					c.value = (a + b);
+					break;
+				case 1:
+					c.value = (a - b);
+					break;
+				case 2:
+					c.value = (a * b);
+					break;
+				case 3:
+					c.value = (a / b);
+					break;
+			}
+		}
+
+	}
+</script>
+</html>
