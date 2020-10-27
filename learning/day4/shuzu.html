@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  /**
+   var area1 = [true,false];
+
+    alert(area1.length);
+    */
+/**
+    var arr = ['hello','JavaScript',22,48, true ];
+    console.log(arr[0]);
+    console.log(arr[2]);
+    console.log(arr);
+*/
+ /**   var a = ("a","b","c","d");
+    for (var temp of a);
+    a[2] = 123;
+    a[4] = "e"
+    console.log(temp);
+*/
+/**
+var arr = [100, 200, 300, 400,300, 600,500,];
+var min = max = arr[0];
+for(var i = 1; i < arr.length;++i){
+    if(arr[i] > max){
+    max = arr[i];
+}
+if(arr[i] < min){
+    min = arr[i];
+}
+}
+console.log('待查找数组' + arr);
+console.log('最小值' + min);
+console.log('最大值' + max);
+*/
+var total = prompt('请输入猴子的总数');
+var kick = prompt('踢出第几只猴子');
+var monkey = [];
+for (var i = 1;i <= total; ++i);{
+    monkey.push(i);
+}
+i = 0;
+while(monkey.length > 1){
+    ++i;
+    head = monkey.shift();
+    if(i % kick != 0){
+        monkey.push(head);
+    }
+}
+console.log('猴王编号为：' + monkey[0]);
+/**
+    var total = prompt('请输入猴子的总数');
+	var kick = prompt('踢出去第几只猴子');
+	var monkey = [];
+	for (var i = 1;i <= total; ++i)
+	{
+		monkey.push(i);
+	}
+	i = 0;
+	while (monkey.length > 1)
+	{
+		++i;
+		head = monkey.shift();
+		if (i % kick != 0)
+		{
+			monkey.push(head);
+		}
+	}
+	console.log('猴王编号：' + monkey[0]);
+    */
+</script>
+</html>

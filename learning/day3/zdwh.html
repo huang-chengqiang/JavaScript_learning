@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动问候</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var i = new Date();
+    var a = i.getHours();
+    if(a<6){
+        alert("你不会是熬通宵吧，别太辛苦哦！");
+    }
+    else if(a<8){
+        alert("早上好");
+    }
+    else if(a < 11){
+        alert("上午好");
+    }
+    else if(a < 13){
+        alert("午饭吃过了吗？");
+    }
+    else if(a < 17){
+        alert("下午好");
+    }
+    else if(a < 24){
+        alert("晚上好");
+    }
+</script>
+</html>
